@@ -1,0 +1,7 @@
+.shapes {
+  z-index: -1;
+
+  @include responsive-mobile {
+    display: none;
+  }
+}

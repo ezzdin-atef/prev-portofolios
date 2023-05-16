@@ -1,0 +1,17 @@
+@import "abstract/variables";
+@import "abstract/mixin";
+@import "abstract/reset";
+@import "abstract/animation";
+
+@import "components/section";
+@import "components/navbar";
+@import "components/btns";
+@import "components/badges";
+@import "components/loader";
+@import "components/shapes";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/skills";
+@import "pages/projects";
+@import "pages/contact";

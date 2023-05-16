@@ -1,0 +1,38 @@
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding-top: 200px;
+
+  @include responsive-tablet {
+    padding-top: 180px;
+  }
+  @include responsive-mobile {
+    padding-top: 75px;
+  }
+  .heading {
+    position: absolute;
+    top: 10px;
+    left: 80px;
+    font-size: 150px;
+    letter-spacing: 20px;
+    opacity: 0.2;
+
+    @include responsive-tablet {
+      font-size: 80px;
+    }
+    @include responsive-mobile {
+      position: unset;
+      font-size: 40px;
+      opacity: 0.4;
+      text-align: center;
+    }
+  }
+  & > img {
+    position: absolute;
+    opacity: 0.3;
+  }
+}

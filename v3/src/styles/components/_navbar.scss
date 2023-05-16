@@ -1,0 +1,123 @@
+.open,
+.close {
+  display: none;
+  z-index: 5;
+  font-size: 26px;
+  color: var(--white);
+  background-color: var(--main-color);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+
+  @include responsive-mobile {
+    display: inline-block;
+  }
+  &.d-none {
+    @include responsive-mobile {
+      display: none !important;
+    }
+  }
+}
+
+.navigation-bar {
+  background-color: var(--bg);
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  height: 100vh;
+  width: 60px;
+  font-size: 20px;
+  border-right: 1px solid rgba($color: var(--white), $alpha: 0.05);
+
+  @include responsive-mobile {
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    width: 100%;
+    overflow: hidden;
+    display: none;
+  }
+  &.d-none {
+    @include responsive-mobile {
+      display: none;
+    }
+  }
+  &.d-flex {
+    @include responsive-mobile {
+      display: flex;
+    }
+  }
+  h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    color: var(--main-color);
+  }
+  .sections {
+    list-style: none;
+    font-size: 25px;
+    li {
+      margin: 15px 0;
+
+      @include responsive-mobile {
+        margin: 20px 0;
+      }
+      a {
+        color: rgba(255, 255, 255, 0.4);
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+
+        @include responsive-mobile {
+          text-decoration: none;
+        }
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+        span {
+          display: none;
+
+          @include responsive-mobile {
+            display: inline-block;
+          }
+        }
+      }
+    }
+    .active {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+  .social {
+    list-style: none;
+    font-size: 22px;
+    padding-bottom: 20px;
+    li {
+      margin: 10px 0;
+      a {
+        color: rgba(255, 255, 255, 0.4);
+        cursor: pointer;
+        transition: color 0.2s ease-in-out;
+
+        @include responsive-mobile {
+          text-decoration: none;
+        }
+        &:hover {
+          color: rgba(255, 255, 255, 1);
+        }
+
+        span {
+          display: none;
+
+          @include responsive-mobile {
+            display: inline-block !important;
+          }
+        }
+      }
+    }
+  }
+}

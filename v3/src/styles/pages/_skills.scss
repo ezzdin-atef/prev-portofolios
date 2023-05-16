@@ -1,0 +1,48 @@
+.skills {
+  align-content: center;
+  & > img {
+    &:first-child {
+      right: -5%;
+      bottom: 15%;
+    }
+    &:nth-child(2) {
+      left: 20%;
+      top: 30%;
+      transform: rotate(30deg);
+    }
+    &:nth-child(3) {
+      top: -15%;
+      right: 30%;
+      filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(338deg)
+        brightness(114%) contrast(0%);
+    }
+  }
+  .cat {
+    flex-basis: 50%;
+    flex-shrink: 0;
+    font-size: 25px;
+    margin: 2em 0;
+    padding: 0 5em;
+    line-height: 1.7;
+    transform: scale(1);
+    animation: pulse 0.4s ease forwards;
+
+    @include responsive-mobile {
+      padding: 0 5px;
+      flex-basis: 100%;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    ul {
+      list-style: none;
+      font-size: 22px;
+      color: rgba($color: var(--white), $alpha: 0.8);
+      li {
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

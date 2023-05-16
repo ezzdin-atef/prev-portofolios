@@ -1,0 +1,120 @@
+.projects {
+  justify-content: center;
+  align-content: center;
+
+  @include responsive-tablet {
+    padding-top: 200px;
+  }
+  & > img {
+    &:first-child {
+      right: -5%;
+      bottom: 20%;
+    }
+    &:nth-child(2) {
+      left: 30%;
+      top: 50%;
+      transform: rotate(30deg);
+    }
+    &:nth-child(3) {
+      top: -5%;
+      right: 30%;
+      filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(338deg)
+        brightness(114%) contrast(0%);
+    }
+  }
+  .card {
+    width: 70%;
+    background-color: var(--light-dark);
+    color: var(--white);
+    padding: 10px;
+    font-size: 25px;
+    margin: 20px 0;
+    border-radius: 3px;
+    box-shadow: 3px 3px 1px 2px #00000063;
+    transition: box-shadow 0.2s ease-in-out;
+    opacity: 1;
+    animation: fade 0.8s ease forwards;
+
+    @include responsive-mobile {
+      width: 90%;
+    }
+    &:hover {
+      box-shadow: 3px 3px 1px 2px #00000034;
+    }
+    h4 {
+      margin: 15px 0;
+      a {
+        color: var(--white);
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+        span {
+          transition: padding 0.2s ease-in-out;
+        }
+        &:hover {
+          color: var(--main-color);
+          span {
+            padding-left: 15px;
+          }
+        }
+      }
+    }
+    p {
+      line-height: 1.4;
+      color: rgba($color: var(--white), $alpha: 0.6);
+      margin: 15px 0;
+    }
+    .credit {
+      a {
+        margin: 0 0 10px 0;
+        color: #fff;
+        background-color: #009688;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 4px 10px;
+        display: inline-block;
+        transition: background-color 0.3s ease-in-out;
+        &:hover {
+          background-color: #009687d5;
+        }
+      }
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 3px;
+      .langs {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include responsive-mobile {
+          width: 90%;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        span {
+          padding: 5px 10px;
+          background-color: transparent;
+          // border: 3px solid #272727;
+          border-radius: 5px;
+          font-size: 20px;
+          margin: 3px 8px 3px 0;
+
+          @include responsive-mobile {
+            margin: 3px 8px 3px 0;
+          }
+        }
+      }
+      img {
+        width: 25px;
+      }
+      a {
+        color: rgba($color: var(--white), $alpha: 0.6);
+        transition: color 0.2s ease-in-out;
+        &:hover {
+          color: rgba($color: var(--white), $alpha: 1);
+        }
+      }
+    }
+  }
+}

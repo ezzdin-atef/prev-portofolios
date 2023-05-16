@@ -1,0 +1,51 @@
+[
+  {
+    "title": "eCommerce App",
+    "live": "https://ecommerce-react-123.netlify.app",
+    "description": "It's an eCommerce React App for selling Products Online",
+    "github": "https://github.com/ezzdin-atef/eCommerce-React",
+    "langs": ["js", "react", "node", "express", "graphql", "firebase", "mongodb"]
+  },
+  {
+    "title": "Buggi Tracker App",
+    "live": "https://buggi-tracker-app.netlify.app",
+    "description": "It's an Bug Tracker App to report about bugs and I made the both front end and back end",
+    "github": "https://github.com/ezzdin-atef/Buggi-tracker",
+    "langs": ["js", "react", "node", "express", "mongodb"]
+  },
+  {
+    "title": "Movies App",
+    "live": "https://movie-app-12354.netlify.app",
+    "description": "It's an app to search and find some cool Movies and Series and I used TMDB API",
+    "github": "https://github.com/ezzdin-atef/movies-app",
+    "langs": ["react", "js"]
+  },
+  {
+    "title": "Bike Store",
+    "live": "no-preview.html",
+    "description": "Bike Store is a College project for selling and renting bikes and its accessories and for posting blogs about bikes.",
+    "github": "https://github.com/ezzdin-atef/BikeStore",
+    "langs": ["html", "css", "js", "jquery", "php", "mysql"]
+  },
+  {
+    "title": "Fitness Management System",
+    "live": "no-preview.html",
+    "description": "This project help fitness club to manage their system well",
+    "github": "https://github.com/ezzdin-atef/Fitness-Management-System",
+    "langs": ["html", "css", "js", "jquery", "php", "mysql"]
+  },
+  {
+    "title": "Quiz App",
+    "live": "https://quiz-app-1235.netlify.app",
+    "description": "Quiz App in JavaScript with more than 120 question in HTML5, CSS3, JavaScript",
+    "github": "https://github.com/ezzdin-atef/Quiz-App",
+    "langs": ["html", "css", "js"]
+  },
+  {
+    "title": "ToDo List",
+    "live": "https://ezzdin-todo-list.netlify.app",
+    "description": "A Simple To Do List",
+    "github": "https://github.com/ezzdin-atef/ToDoList",
+    "langs": ["html", "css", "js"]
+  }
+]
